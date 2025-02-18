@@ -1,7 +1,6 @@
 # LearnEasy
 
 ## Introduction
-
 This repository contains the backend, the frontend and the scientific paper in German of **LearnEasy**. The project is a learning application for schools that can be used by teachers and pupils. It has a special focus on accessibility and platform independence and does not store any personal data.
 - Anonymous accounts: Each user requires a registration code, which is provided in the staff room in case of a teacher and by a teacher in case of a student. When registering, only this registration code is required in order to create an account with the role teacher or student and an automatically and randomly generated username that serves as a password for future logins. Provided the user keeps the username secret, the account is completely anonymous.
 - Subjects: Users with an account with the role teacher can create subjects. When doing so, they receive a registration code that they can pass on to their students. Such a registration code can be used by students who already have a LearnEasy account to join the respective subject. On the other hand, the registration code can also be used by students who are not yet registered to create an account, while also joining the respective subject.
@@ -11,6 +10,23 @@ The paper describes the specification, design, implementation, testing and valid
 
 The project was created during our Master‘s programme at Hof University of Applied Sciences in the lecture „Hybrid apps“.
 <br>
+<br>
+
+## Backend
+You can find the API documentation [here](https://teamgruenbaum.github.io/LearnEasy/).
+<br>
+<br>
+
+## Frontend
+The following images provide an impression of our frontend.
+<p align="center">
+<img src="https://github.com/TeamGruenbaum/LearnEasy/blob/main/frontend/public/screenshot-1.png" width="45%" border=0>
+<img src="https://github.com/TeamGruenbaum/LearnEasy/blob/main/frontend/public/screenshot-2.png" width="45%" border=0>
+<img src="https://github.com/TeamGruenbaum/LearnEasy/blob/main/frontend/public/screenshot-3.png" width="45%" border=0>
+<img src="https://github.com/TeamGruenbaum/LearnEasy/blob/main/frontend/public/screenshot-4.png" width="45%" border=0>
+<img src="https://github.com/TeamGruenbaum/LearnEasy/blob/main/frontend/public/screenshot-5.png" width="45%" border=0>
+<img src="https://github.com/TeamGruenbaum/LearnEasy/blob/main/frontend/public/screenshot-6.png" width="45%" border=0>
+</p>
 <br>
 
 ## How to start
