@@ -1,0 +1,45 @@
+name: "learneasy"
+services:
+  database:
+    image: "postgres:17"
+    volumes:
+      - "database-data:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: "administrator"
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: "learneasy"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "administrator", "-d", "learneasy"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  backend:
+    depends_on:
+      database:
+        condition: service_healthy
+    build: ./backend/
+    ports:
+      - "8080:8080"
+    environment:
+      LEARNEASY_DATABASE_SETUP: "update"
+      LEARNEASY_DATABASE_DRIVER_CLASS_NAME: "org.postgresql.Driver"
+      LEARNEASY_DATABASE_URL: "jdbc:postgresql://database:5432/learneasy"
+      LEARNEASY_DATABASE_USERNAME: "administrator"
+      LEARNEASY_DATABASE_PASSWORD: "12345678"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  frontend:
+    depends_on:
+      backend:
+        condition: service_healthy
+    build: ./frontend/
+    ports:
+      - "5173:5173"
+
+volumes:
+  database-data:

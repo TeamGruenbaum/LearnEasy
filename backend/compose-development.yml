@@ -1,0 +1,15 @@
+name: "learneasy-development"
+services:
+  database:
+    image: "postgres:17"
+    environment:
+      POSTGRES_USER: "administrator"
+      POSTGRES_PASSWORD: 12345678
+      POSTGRES_DB: "learneasy"
+    ports:
+      - "5434:5432"
+    volumes:
+      - "database-data:/var/lib/postgresql/data"
+
+volumes:
+  database-data:

@@ -1,0 +1,6 @@
+services:
+  testing:
+    build: .
+    environment:
+      LEARNEASY_BACKEND_URL: "http://192.168.178.56:8080"
+      LEARNEASY_SCHOOL_REGISTRATION_CODE: "PJTOXO"

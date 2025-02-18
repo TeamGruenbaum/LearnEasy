@@ -1,0 +1,97 @@
+{
+    "start_url": "/index.html",
+    "id": "de.leaneasy.frontend",
+    "name": "LeanEasy",
+    "short_name": "LeanEasy",
+    "description": "LeanEasy ist eine Anwendung, mit der das Üben für Lehrer und Schüler einfacher wird und mehr Freude bereitet.",
+    "icons": [
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshot-1.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshot-2.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshot-3.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshot-4.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshot-5.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshot-6.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshot-1.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshot-2.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshot-3.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshot-4.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshot-5.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshot-6.png",
+            "type": "image/png",
+            "sizes": "2062x2404",
+            "form_factor": "narrow"
+        }
+    ],
+    "theme_color": "#de8b57",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "any"
+}
